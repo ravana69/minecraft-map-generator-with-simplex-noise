@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Minecraft Map Generator with Simplex Noise.</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<span id="arrow"></span>
+<header>
+    <h1>Simplex Noise based <br/> Minecraft map generator.</h1>
+
+    <!-- Description about the experiment-->
+    <div class="description">
+        <section id="about">            
+            <p id accesskey="a" class="about">
+                <p>An experiment this time using based on the simplex noise algorithm to generate random map and fake shadow and fog for atmospheric environment.</p>
+                <p>You can find the Javascript port of simplex noise algorithm on my gist repo: <a target="_blank" href="https://gist.github.com/esimov/9be66c7c9d02cf6fc1cb">https://gist.github.com/esimov/9be66c7c9d02cf6fc1cb</a>.</p>
+            </p>  
+            <span class="first-line">Press and hold the mouse to explore or <br/></span>
+            <span class="second-line">play with values to generate new Minecraft land.</span>          
+        </section>
+    </div>
+
+    <div id="gui"></div>
+</header> 
+
+<div class="wrapper">   
+    <div class="context"></div>    
+</div>
+<!-- partial -->
+  <script src='https://cdn.rawgit.com/esimov/simplexnoise.js/master/src/SimplexNoise.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
